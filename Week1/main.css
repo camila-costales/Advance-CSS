@@ -1,0 +1,23 @@
+/* small */
+h1 a{
+    text-decoration: none;
+    color: black
+}
+li a{
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+.post-date{
+    text-transform: uppercase;
+    text-align: right;
+}
+h2 a{
+    text-decoration: none;
+    color: black
+}
+/* large 
+@media only screen and (min-width: 55.5em) {
+
+}
