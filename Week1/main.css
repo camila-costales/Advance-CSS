@@ -19,6 +19,10 @@ li a{
     text-transform: uppercase;
     color: #666;
 }
+li a:hover{
+    color: #DEB887;
+    background-color: #00ddff;
+}
 
 ul li {
     list-style-type: none;
@@ -37,15 +41,32 @@ h2 a{
     font-family: 'Lora', serif;
     color: #666;
 }
+h2 a:hover{
+    color: #DEB887;
+    background-color: #00ddff;
+}
 
 figure img{
     margin: 0 auto;
 }
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333
+}
+
 p a{
     color:#666
 }
+p a:hover{
+    color: #DEB887;
+    background-color: #00ddff;
+}
 
-/* large 
+/* large  */
 @media only screen and (min-width: 55.5em) {
+    h1 a{
+        text-decoration: none;
+        color: pink;
+       
 
 }
