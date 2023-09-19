@@ -1,22 +1,50 @@
 /* small */
+
+  @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+header{
+    text-align: center;
+}
+
 h1 a{
     text-decoration: none;
-    color: black
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: 50px;
 }
+
 li a{
     text-decoration: none;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    color: #666;
 }
+
 ul li {
     list-style-type: none;
 }
+
 .post-date{
     text-transform: uppercase;
     text-align: right;
+    font-family: 'Lora', serif;
+    font-size: 18px;
 }
+
 h2 a{
     text-decoration: none;
-    color: black
+    color: black;
+    font-family: 'Lora', serif;
+    color: #666;
 }
+
+figure img{
+    margin: 0 auto;
+}
+p a{
+    color:#666
+}
+
 /* large 
 @media only screen and (min-width: 55.5em) {
 
