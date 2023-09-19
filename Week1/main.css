@@ -78,9 +78,24 @@ p a:hover{
 
 /* large  */
 @media only screen and (min-width: 55.5em) {
-    h1 a{
-        text-decoration: none;
-        color: pink;
-       
 
+    li{
+        display: inline;
+        padding: 30px;
+        margin: 20 auto;
+        }
+
+        article{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column: 1px solid #d0d0d0 ;
+           }
+        .post-date{
+            grid-column: 1/2;
+            text-align: center;
+        }
+        .post-content{
+            display: 2/3
+
+        }
 }
