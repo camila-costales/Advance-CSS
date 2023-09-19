@@ -88,14 +88,20 @@ p a:hover{
         article{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-column: 1px solid #d0d0d0 ;
+            border-bottom: 1px solid #d0d0d0 ;
            }
         .post-date{
             grid-column: 1/2;
             text-align: center;
+            border-right: 1px solid #d0d0d0 ;
+
         }
         .post-content{
-            display: 2/3
+            display: 2/3;
+            padding: 30px;
 
+        }
+        .post-content{
+            border-top: none;
         }
 }
