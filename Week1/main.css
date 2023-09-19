@@ -82,7 +82,7 @@ p a:hover{
     li{
         display: inline;
         padding: 30px;
-        margin: 20 auto;
+        margin: 20;
         }
 
         article{
@@ -97,7 +97,7 @@ p a:hover{
 
         }
         .post-content{
-            display: 2/3;
+            grid-column: 2/3;
             padding: 30px;
 
         }
