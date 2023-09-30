@@ -1,0 +1,117 @@
+/* Mixins */
+@mixin hover-style{
+    &:hover{
+        color: $hover-color;
+        background-color: $link-color;
+    }
+}
+
+/* Variable */
+$base-color: #666;
+$border-color: #d0d0d0;
+$hover-color: #DEB887;
+$link-color: #00ddff;
+$primary-font: 'Lora', serif;
+
+
+/* Small */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+header {
+    text-align: center;
+
+    h1 a {
+        text-decoration: none;
+        color: black;
+        font-family: $primary-font;
+        font-size: 50px;
+    }
+}
+
+nav {
+    border-bottom: $border-color;
+    border-top: $border-color;
+}
+
+.post-content {
+    border-top: $border-color;
+}
+
+li a {
+    text-decoration: none;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    color: $base-color;
+
+    @include hover-style;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.post-date {
+    text-transform: uppercase;
+    text-align: right;
+    font-family:$primary-font;
+    font-size: 18px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+    font-family: $primary-font;
+    color: $base-color;
+
+    &:hover {
+        color:$hover-color;
+        background-color: $link-color;
+    }
+}
+
+figure {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+
+    a {
+        color: $base-color;
+
+        @include hover-style;
+    }
+}
+
+/* Large */
+@media only screen and (min-width: 55.5em) {
+    li {
+        display: inline;
+        padding: 30px;
+        margin: 20px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid $border-color;
+    }
+
+    .post-date {
+        grid-column: 1/2;
+        text-align: center;
+        border-right: 1px solid $border-color;
+    }
+
+    .post-content {
+        grid-column: 2/3;
+        padding: 30px;
+        border-top: none;
+    }
+}

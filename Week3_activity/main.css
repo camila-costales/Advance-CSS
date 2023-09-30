@@ -1,0 +1,101 @@
+/* Mixins */
+/* Variable */
+/* Small */
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+header {
+  text-align: center;
+}
+header h1 a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lora", serif;
+  font-size: 50px;
+}
+
+nav {
+  border-bottom: #d0d0d0;
+  border-top: #d0d0d0;
+}
+
+.post-content {
+  border-top: #d0d0d0;
+}
+
+li a {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  color: #666;
+}
+li a:hover {
+  color: #DEB887;
+  background-color: #00ddff;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.post-date {
+  text-transform: uppercase;
+  text-align: right;
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+
+h2 a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lora", serif;
+  color: #666;
+}
+h2 a:hover {
+  color: #DEB887;
+  background-color: #00ddff;
+}
+
+figure {
+  text-align: center;
+}
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+p a {
+  color: #666;
+}
+p a:hover {
+  color: #DEB887;
+  background-color: #00ddff;
+}
+
+/* Large */
+@media only screen and (min-width: 55.5em) {
+  li {
+    display: inline;
+    padding: 30px;
+    margin: 20px;
+  }
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #d0d0d0;
+  }
+  .post-date {
+    grid-column: 1/2;
+    text-align: center;
+    border-right: 1px solid #d0d0d0;
+  }
+  .post-content {
+    grid-column: 2/3;
+    padding: 30px;
+    border-top: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
